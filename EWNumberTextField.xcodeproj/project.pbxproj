@@ -14,7 +14,6 @@
 		8447710D228AA1E600464DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8447710B228AA1E600464DCA /* LaunchScreen.storyboard */; };
 		84477118228AA1E600464DCA /* EWNumberTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84477117228AA1E600464DCA /* EWNumberTextFieldTests.swift */; };
 		84477123228AA1E600464DCA /* EWNumberTextFieldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84477122228AA1E600464DCA /* EWNumberTextFieldUITests.swift */; };
-		84477131228AA27400464DCA /* EWTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84477130228AA27400464DCA /* EWTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		8447711E228AA1E600464DCA /* EWNumberTextFieldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EWNumberTextFieldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84477122228AA1E600464DCA /* EWNumberTextFieldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWNumberTextFieldUITests.swift; sourceTree = "<group>"; };
 		84477124228AA1E600464DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84477130228AA27400464DCA /* EWTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EWTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				84477102228AA1E500464DCA /* AppDelegate.swift */,
-				84477130228AA27400464DCA /* EWTextField.swift */,
 				84477104228AA1E500464DCA /* ViewController.swift */,
 				84477106228AA1E500464DCA /* Main.storyboard */,
 				84477109228AA1E600464DCA /* Assets.xcassets */,
@@ -261,7 +258,6 @@
 			files = (
 				84477105228AA1E500464DCA /* ViewController.swift in Sources */,
 				84477103228AA1E500464DCA /* AppDelegate.swift in Sources */,
-				84477131228AA27400464DCA /* EWTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

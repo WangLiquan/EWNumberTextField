@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let textField: EWTextField = {
-        let textField = EWTextField(frame: CGRect(x: 100, y: 200, width: 200, height: 50))
+    let textField: UITextField = {
+        let textField = UITextField(frame: CGRect(x: 100, y: 200, width: 200, height: 50))
+        textField.keyboardType = .decimalPad
         textField.backgroundColor = UIColor.gray
         return textField
     }()
@@ -28,10 +29,15 @@ class ViewController: UIViewController {
 }
 extension ViewController : UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if string == "." {
-            if ((textField.text?.range(of: ".")) != nil) {
-                return false
-            }
+        
+        guard string == "." || string == "0" else { return true }
+        guard let text = textField.text else { return true }
+        if text.count == 0 {
+            textField.text = "0."
+            return false
+        }
+        if text.range(of: ".") != nil && string == "." {
+            return false
         }
         return true
     }
